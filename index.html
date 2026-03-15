@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUMOVIA | China Mobility Market Strategy & Risk Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        // 自定义Tailwind配置
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A4DA2', // 高端蓝
+                        secondary: '#1E293B', // 深灰
+                        accent: '#3B82F6', // 亮蓝
+                        light: '#F8FAFC', // 浅灰
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(10, 77, 162, 0.15);
+            }
+            .bg-gradient {
+                background: linear-gradient(135deg, #0A4DA2 0%, #1E3A8A 100%);
+            }
+        }
+    </style>
+    <!-- 引入Inter字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-light text-secondary antialiased">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-primary text-2xl font-bold">AUMOVIA</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#services" class="text-secondary hover:text-primary transition-colors">Services</a>
+                    <a href="#insights" class="text-secondary hover:text-primary transition-colors">Insights</a>
+                    <a href="#about" class="text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <header class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-secondary leading-tight text-shadow mb-6">
+                    De-risk Your <span class="text-primary">China Mobility</span> Market Entry
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-xl">
+                    Strategic insights for EV, ADAS, Tier 1 suppliers, and mobility SaaS teams. 
+                    We turn complex Chinese market dynamics into clear, actionable decisions—no guesswork, no wasted resources.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium">
+                        Get Custom Quote <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#services" class="border border-primary text-primary px-6 py-3 rounded-md hover:bg-primary/5 transition-colors font-medium">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- 抽象科技背景图 -->
+                <div class="bg-gradient rounded-2xl h-96 flex items-center justify-center shadow-xl">
+                    <div class="text-white text-center px-8">
+                        <i class="fa fa-line-chart text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-2">Data-Driven Strategy</h3>
+                        <p class="opacity-90">Objective insights tailored to your business goals</p>
+                    </div>
+                </div>
+                <!-- 装饰元素 -->
+                <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-lg">
+                    <p class="font-medium text-primary">Trusted by Global Mobility Innovators</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 核心服务区 -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-secondary mb-4">Our Deliverables</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Clear, structured solutions to answer your most critical China market questions before you commit resources
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 服务卡片1 -->
+                <div class="card-hover bg-light rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">8–12p Landscape Brief</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-accent mr-2"></i> Competitive ecosystem mapping</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Regulatory compliance redlines</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> User expectation analysis</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> "Go/No-Go" decision validation</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Delivery: 7–10 business days</p>
+                </div>
+
+                <!-- 服务卡片2 -->
+                <div class="card-hover bg-light rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-mobile text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">Product/UX Diagnostics</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-accent mr-2"></i> Compliance gap identification</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Local UX/HMI optimization</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Data security alignment</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Prioritized action notes</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Delivery: 10–14 business days</p>
+                </div>
+
+                <!-- 服务卡片3 -->
+                <div class="card-hover bg-light rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-comments-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">1:1 Strategic Sessions</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-accent mr-2"></i> 60–90min expert guidance</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Market entry timing strategy</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Risk mitigation planning</li>
+                        <li><i class="fa fa-check text-accent mr-2"></i> Resource allocation advice</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">Delivery: Scheduled per availability</p>
+                </div>
+            </div>
+
+            <!-- 服务承诺 -->
+            <div class="mt-16 bg-gradient rounded-2xl p-8 text-white text-center">
+                <h3 class="text-2xl font-semibold mb-4">Our Promise</h3>
+                <p class="max-w-3xl mx-auto opacity-90">
+                    No introductions, no empty promises—just objective, reality-based clarity to avoid costly misalignment 
+                    in your China mobility expansion. We focus solely on delivering insights that drive confident decisions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业洞察区 -->
+    <section id="insights" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-secondary mb-4">China Mobility Insights</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Latest trends and critical considerations for global players entering the Chinese market
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 洞察卡片1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="h-48 bg-gradient flex items-center justify-center">
+                        <i class="fa fa-shield text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Regulatory</span>
+                        <h3 class="text-xl font-semibold mt-3 mb-2">2025 ADAS Compliance Updates</h3>
+                        <p class="text-gray-600 mb-4">Key changes to China's ADAS regulatory framework and how they impact global suppliers.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Read Insight <i class="fa fa-angle-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- 洞察卡片2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="h-48 bg-gradient flex items-center justify-center">
+                        <i class="fa fa-users text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">User Behavior</span>
+                        <h3 class="text-xl font-semibold mt-3 mb-2">EV UX Preferences 2025</h3>
+                        <p class="text-gray-600 mb-4">How Chinese consumers prioritize EV features and what it means for global product design.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Read Insight <i class="fa fa-angle-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们区 -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-secondary mb-6">About AUMOVIA</h2>
+                    <p class="text-gray-600 mb-4">
+                        We are a team of China mobility market specialists with deep expertise in navigation, map data, HMI/UX, 
+                        ADAS enablement, and global OEM programs. Our mission is to help global mobility innovators navigate 
+                        China's complex market landscape with confidence.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Unlike traditional consultancies, we focus exclusively on delivering objective, data-driven insights—no 
+                        biased referrals, no one-size-fits-all reports, just tailored guidance that aligns with your unique goals.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Global Perspective, Local Expertise</h4>
+                            <p class="text-sm text-gray-500">Bridging international innovation with Chinese market reality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-light rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-xl font-semibold mb-6 text-secondary">Our Core Values</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-star text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Objectivity</h4>
+                                    <p class="text-sm text-gray-600">Unbiased insights free from commercial conflicts</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-star text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Actionability</h4>
+                                    <p class="text-sm text-gray-600">Insights that translate directly to business decisions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-star text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Clarity</h4>
+                                    <p class="text-sm text-gray-600">Simplifying complexity without oversimplifying reality</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区 -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="bg-gradient p-10 text-white">
+                        <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+                        <p class="opacity-90 mb-8">
+                            We offer online meetups and custom pricing based on your project scope. 
+                            Let's discuss how we can help de-risk your China market entry.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <i class="fa fa-envelope-o text-2xl w-8"></i>
+                                <a href="mailto:info@aumovia.com" class="hover:underline">info@aumovia.com</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-wechat text-2xl w-8"></i>
+                                <span>AUMOVIA2025 (WeChat)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-linkedin text-2xl w-8"></i>
+                                <a href="https://linkedin.com/company/aumovia" target="_blank" class="hover:underline">@AUMOVIA</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-2xl w-8"></i>
+                                <span>Shanghai, China (Remote Available)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-xl font-semibold mb-6 text-secondary">Request a Custom Quote</h3>
+                        <!-- 替换为邮件跳转表单 -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1" for="company">Company</label>
+                                <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="ABC Mobility Inc.">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@abcmobility.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1" for="service">Interested In</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option>Landscape Brief</option>
+                                    <option>Product/UX Diagnostics</option>
+                                    <option>1:1 Strategic Sessions</option>
+                                    <option>Custom Solution</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1" for="message">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your China market goals..."></textarea>
+                            </div>
+                            <button onclick="sendQuoteRequest()" class="w-full bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium">
+                                Send Request <i class="fa fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AUMOVIA</h3>
+                    <p class="text-gray-400">
+                        De-risking China market entry for global mobility innovators since 2025.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Landscape Brief</a></li>
+                        <li><a href="#" class="hover:text-white">Product/UX Diagnostics</a></li>
+                        <li><a href="#" class="hover:text-white">Strategic Sessions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Market Insights</a></li>
+                        <li><a href="#" class="hover:text-white">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="mailto:info@aumovia.com" class="hover:text-white">info@aumovia.com</a></li>
+                        <li><span class="flex items-center"><i class="fa fa-wechat mr-2"></i> AUMOVIA2025</span></li>
+                        <li><a href="https://linkedin.com/company/aumovia" target="_blank" class="hover:text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>© 2026 AUMOVIA. All rights reserved. | Online meetup available; pricing by quote.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90 transition-colors">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+
+        // 邮件跳转功能（方案2核心）
+        function sendQuoteRequest() {
+            // 获取表单值
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            // 简单验证（非空提示）
+            if (!name || !email) {
+                alert('Please fill in your name and email address!');
+                return;
+            }
+
+            // 拼接邮件主题和内容
+            const subject = `Custom Quote Request - ${name} (${company || 'No Company'})`;
+            const body = `Name: ${name}\nCompany: ${company || 'Not Provided'}\nEmail: ${email}\nInterested In: ${service}\nMessage: ${message || 'No Message Provided'}`;
+            
+            // 跳转到邮箱客户端
+            window.location.href = `mailto:info@aumovia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+    </script>
+</body>
+</html>
